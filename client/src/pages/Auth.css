@@ -1,0 +1,19 @@
+.auth-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;position:relative}
+.auth-page:before{content:"";position:absolute;top:20%;left:50%;transform:translateX(-50%);width:500px;height:400px;background:radial-gradient(circle,rgba(255,107,53,.12),transparent 65%);pointer-events:none}
+.auth-back{position:absolute;top:24px;left:24px;background:none;border:none;color:var(--light);font-family:var(--fb);font-size:13px;cursor:pointer}
+.auth-back:hover{color:var(--accent)}
+.auth-card{width:100%;max-width:420px;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:36px;position:relative}
+.auth-logo{justify-content:center;margin-bottom:24px}
+.auth-card h1{font-family:var(--fh);font-size:30px;font-weight:800;margin-bottom:8px}
+.auth-sub{font-size:13px;color:var(--light);margin-bottom:26px;line-height:1.6}
+.auth-submit{width:100%;padding:14px;margin-top:8px}
+.auth-error{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.4);color:#FCA5A5;padding:11px 14px;border-radius:8px;font-size:12px;margin-bottom:14px}
+.auth-switch{text-align:center;font-size:13px;color:var(--light);margin-top:22px}
+.auth-switch button{background:none;border:none;color:var(--accent);font-family:var(--fb);font-size:13px;font-weight:600;cursor:pointer;padding:0}
+.auth-note{text-align:center;font-size:11px;color:var(--muted);margin-top:16px}
+.auth-icon-big { font-size: 44px; text-align: center; margin-bottom: 8px; }
+.auth-forgot { text-align: right; margin: -6px 0 12px; }
+.auth-forgot button {
+  background: none; border: none; color: #f97316;
+  font-size: 13px; cursor: pointer; text-decoration: underline;
+}

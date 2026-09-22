@@ -1,0 +1,266 @@
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background: #131926;
+  border: 1px solid #232c3d;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  border-color: #f97316;
+}
+
+.blog-card-img { height: 160px; overflow: hidden; }
+.blog-card-img img { width: 100%; height: 100%; object-fit: cover; }
+
+.blog-card-body { padding: 18px; }
+.blog-card-title {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.blog-card-excerpt {
+  color: #9aa5b8;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.blog-card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #6b7688;
+  font-size: 12px;
+}
+
+.blog-loading, .blog-empty {
+  text-align: center;
+  color: #8a94a6;
+  padding: 60px 20px;
+}
+.blog-empty-emoji { font-size: 40px; margin-bottom: 12px; }
+
+/* Single post */
+.blog-post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.blog-back {
+  background: none;
+  border: none;
+  color: #f97316;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.blog-post-img {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  max-height: 320px;
+}
+.blog-post-img img { width: 100%; object-fit: cover; }
+
+.blog-post-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.blog-post-meta {
+  color: #8a94a6;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+.blog-post-content p {
+  color: #c4cdda;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3 {
+  color: #fff;
+  margin: 28px 0 12px;
+  line-height: 1.3;
+}
+.blog-post-content h2 { font-size: 22px; font-weight: 700; }
+.blog-post-content h3 { font-size: 18px; font-weight: 700; }
+.blog-post-content strong { color: #fff; font-weight: 700; }
+.blog-post-content ul,
+.blog-post-content ol {
+  color: #c4cdda;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+.blog-post-content li { margin-bottom: 8px; }
+.blog-post-content p {
+  color: #c4cdda;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.blog-post-content a { color: #f97316; }
+.blog-post-content img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 24px 0;
+  display: block;
+}
+/* Article content — har element ek-ke-baad-ek fade-up ho (stagger) */
+.blog-post {
+  animation: blogFadeUp 0.5s ease-out;
+}
+
+.blog-post-content > * {
+  opacity: 0;
+  animation: blogFadeUp 0.6s ease-out forwards;
+}
+
+/* Har element thoda der se aaye — sequence banta hai */
+.blog-post-content > *:nth-child(1)  { animation-delay: 0.05s; }
+.blog-post-content > *:nth-child(2)  { animation-delay: 0.10s; }
+.blog-post-content > *:nth-child(3)  { animation-delay: 0.15s; }
+.blog-post-content > *:nth-child(4)  { animation-delay: 0.20s; }
+.blog-post-content > *:nth-child(5)  { animation-delay: 0.25s; }
+.blog-post-content > *:nth-child(6)  { animation-delay: 0.30s; }
+.blog-post-content > *:nth-child(7)  { animation-delay: 0.35s; }
+.blog-post-content > *:nth-child(8)  { animation-delay: 0.40s; }
+.blog-post-content > *:nth-child(9)  { animation-delay: 0.45s; }
+.blog-post-content > *:nth-child(n+10) { animation-delay: 0.5s; }
+
+@keyframes blogFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.blog-author-box {
+  margin: 40px auto 0;
+  max-width: 720px;
+  background: #131926;
+  border: 1px solid #f97316;
+  border-radius: 14px;
+  padding: 24px;
+}
+.blog-author-head {
+  color: #f97316;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.blog-author-box p {
+  color: #c4cdda;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+.blog-author-box a { color: #f97316; text-decoration: none; }
+.blog-author-box a:hover { text-decoration: underline; }
+.blog-author-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.blog-author-links a {
+  font-size: 13px;
+  font-weight: 600;
+}
+/* Article content ko ek box/card mein daalो */
+.blog-post-content {
+  background: #0f1420;
+  border: 1px solid #232c3d;
+  border-radius: 14px;
+  padding: 32px 28px;
+  margin-top: 8px;
+}
+
+/* Mobile pe thoda kam padding */
+@media (max-width: 600px) {
+  .blog-post-content {
+    padding: 22px 18px;
+  }
+}
+.blog-author-mini {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.blog-author-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.blog-author-mini-name {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.blog-author-mini-sub {
+  color: #8a94a6;
+  font-size: 12px;
+  margin-top: 1px;
+}
+/* Author mini-card (title ke neeche) */
+.blog-author-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 720px;
+  margin: 0 auto 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid #232c3d;
+}
+.blog-author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.blog-author-mini-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.blog-author-mini-sub {
+  color: #8a94a6;
+  font-size: 12px;
+  margin-top: 2px;
+}

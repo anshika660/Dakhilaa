@@ -1,0 +1,169 @@
+/* ============ MOCK TEST HUB — dark theme (matches Dakhilaa app) ============ */
+ 
+.hub-loading {
+  padding: 60px;
+  text-align: center;
+  color: #8a94a6;
+  font-size: 16px;
+}
+ 
+.hub-section-head h2 {
+  font-size: 22px;
+  color: #fff;
+  margin: 0 0 4px;
+}
+.hub-section-head p {
+  font-size: 13px;
+  color: #8a94a6;
+  margin: 0 0 16px;
+}
+ 
+/* ---------- FULL MOCK CARDS (narrow, side-by-side) ---------- */
+.hub-mock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);   /* fixed 300px each, not stretched */
+  gap: 16px;
+  align-items: stretch;
+}
+.hub-mock-card {
+  background: #141a2a;
+  border: 1px solid #232a3d;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+.hub-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.hub-badge.free { background: #1f3a2a; color: #4ade80; }
+ 
+.hub-mock-card h3 {
+  font-size: 17px;
+  color: #fff;
+  margin: 0 0 12px;
+}
+.hub-mock-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  flex: 1;
+  width: 100%;
+}
+.hub-mock-meta li {
+  font-size: 13px;
+  color: #b6c0d4;
+  padding: 3px 0 3px 20px;
+  position: relative;
+}
+.hub-mock-meta li::before {
+  content: '•';
+  position: absolute;
+  left: 6px;
+  color: #f97316;
+}
+.hub-start-btn {
+  width: 100%;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hub-start-btn:hover { background: #ea6a0c; }
+ 
+/* ---------- CHAPTER SUBJECT TABS ---------- */
+.hub-subject-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.hub-subject-tab {
+  background: #141a2a;
+  border: 1px solid #232a3d;
+  color: #b6c0d4;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.hub-subject-tab.active {
+  background: #f97316;
+  color: #fff;
+  border-color: #f97316;
+}
+ 
+/* ---------- CHAPTER CARDS (all same size) ---------- */
+.hub-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+}
+.hub-chapter-card {
+  background: #141a2a;
+  border: 1px solid #232a3d;
+  border-radius: 10px;
+  padding: 16px;
+  min-height: 150px;            /* all cards same height */
+  display: flex;
+  flex-direction: column;
+}
+.hub-chapter-card.soon { opacity: 0.6; }
+.hub-chapter-card h4 {
+  font-size: 15px;
+  color: #fff;
+  margin: 0 0 8px;
+  min-height: 40px;            /* 1 or 2 line titles align */
+}
+.hub-chapter-count {
+  font-size: 12px;
+  color: #8a94a6;
+  margin: 0 0 12px;
+  flex: 1;                     /* pushes button to bottom */
+}
+.hub-chapter-count.muted { color: #6b7280; }
+.hub-chapter-btn {
+  width: 100%;
+  background: transparent;
+  color: #f97316;
+  border: 1px solid #f97316;
+  padding: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: auto;
+}
+.hub-chapter-btn:hover { background: #f97316; color: #fff; }
+.hub-soon-tag {
+  display: inline-block;
+  font-size: 11px;
+  color: #8a94a6;
+  background: #232a3d;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-top: auto;
+}
+.hub-empty {
+  grid-column: 1 / -1;
+  color: #8a94a6;
+  font-size: 14px;
+  padding: 20px;
+  text-align: center;
+}
+ 
+@media (max-width: 640px) {
+  .hub-chapter-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .hub-mock-grid { grid-template-columns: 1fr; }   /* mobile: stack mock cards */
+}

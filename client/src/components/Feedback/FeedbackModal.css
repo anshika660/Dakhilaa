@@ -1,0 +1,119 @@
+
+/* ============ FEEDBACK MODAL ============ */
+.fb-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.fb-modal {
+  background: #141a2a;
+  border: 1px solid #232a3d;
+  border-radius: 16px;
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+}
+.fb-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #8a94a6;
+  font-size: 18px;
+  cursor: pointer;
+}
+.fb-title {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 4px;
+}
+.fb-sub {
+  font-size: 13px;
+  color: #8a94a6;
+  margin: 0 0 20px;
+}
+.fb-label {
+  display: block;
+  font-size: 13px;
+  color: #b6c0d4;
+  margin: 14px 0 6px;
+  font-weight: 500;
+}
+.fb-input, .fb-textarea {
+  width: 100%;
+  background: #0f1420;
+  border: 1px solid #232a3d;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.fb-input:focus, .fb-textarea:focus {
+  outline: none;
+  border-color: #f97316;
+}
+.fb-textarea { resize: vertical; }
+.fb-count {
+  text-align: right;
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+.fb-stars {
+  display: flex;
+  gap: 6px;
+}
+.fb-star {
+  font-size: 30px;
+  color: #374151;
+  cursor: pointer;
+  transition: color 0.1s, transform 0.1s;
+}
+.fb-star:hover { transform: scale(1.15); }
+.fb-star.on { color: #fbbf24; }
+.fb-error {
+  color: #f87171;
+  font-size: 13px;
+  margin-top: 12px;
+}
+.fb-btn {
+  width: 100%;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.fb-btn:hover { background: #ea6a0c; }
+.fb-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+ 
+/* success state */
+.fb-done {
+  text-align: center;
+  padding: 10px 0;
+}
+.fb-done-icon { font-size: 44px; }
+.fb-done h3 {
+  color: #fff;
+  font-size: 20px;
+  margin: 12px 0 8px;
+}
+.fb-done p {
+  color: #8a94a6;
+  font-size: 14px;
+  margin: 0 0 20px;
+  line-height: 1.5;
+}

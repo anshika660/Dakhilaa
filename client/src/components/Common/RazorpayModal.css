@@ -1,0 +1,122 @@
+/* RazorpayModal.css */
+
+.rzp-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.rzp-modal {
+  position: relative;
+  background: #0f1420;
+  border: 1px solid #2a3242;
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.rzp-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #8a94a6;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+}
+.rzp-close:hover { color: #fff; }
+
+.rzp-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.rzp-price {
+  color: #f97316;
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.rzp-price span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8a94a6;
+}
+
+.rzp-desc {
+  color: #9aa5b8;
+  font-size: 13px;
+  margin: 14px 0 20px;
+}
+
+.rzp-error {
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.rzp-success {
+  color: #4ade80;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px 0;
+  line-height: 1.6;
+}
+
+.rzp-pay-btn {
+  width: 100%;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.rzp-pay-btn:hover:not(:disabled) { background: #ea6a0c; }
+.rzp-pay-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.rzp-features {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0;
+  text-align: left;
+}
+.rzp-features li {
+  color: #b6c0d4;
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px solid #1c2333;
+}
+.rzp-features li:last-child { border-bottom: none; }
+
+.rzp-secure {
+  color: #6b7688;
+  font-size: 11px;
+  margin-top: 12px;
+}
+.rzp-referral {
+  width: 100%; background: #0A0A0A; border: 1px solid #2a3242;
+  border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 13px;
+  margin-bottom: 14px; text-align: center; font-family: inherit;
+}
+.rzp-referral:focus { outline: none; border-color: #f97316; }

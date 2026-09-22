@@ -1,0 +1,123 @@
+.sbot-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sbot-fab:hover { background: #ea6a0c; }
+ 
+.sbot-panel {
+  position: fixed;
+  bottom: 92px;
+  right: 24px;
+  width: 340px;
+  max-width: calc(100vw - 32px);
+  background: #0b0e14;
+  border: 1px solid #232c3d;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  overflow: hidden;
+}
+ 
+.sbot-header {
+  background: #131926;
+  padding: 14px 16px;
+  border-bottom: 1px solid #232c3d;
+}
+.sbot-header-title { color: #fff; font-size: 14px; font-weight: 700; }
+.sbot-header-sub { color: #4ade80; font-size: 11px; margin-top: 2px; }
+ 
+.sbot-chat {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.sbot-msg {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 9px 12px;
+  border-radius: 10px;
+  max-width: 85%;
+}
+.sbot-msg.bot { background: #161b26; color: #b6c0d4; align-self: flex-start; }
+.sbot-msg.user { background: #f97316; color: #fff; align-self: flex-end; }
+.sbot-typing { color: #8a94a6; font-style: italic; }
+ 
+.sbot-quick {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 0 12px 10px;
+}
+.sbot-quick button {
+  background: #1c2333;
+  color: #9aa5b8;
+  border: none;
+  font-size: 11px;
+  padding: 5px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.sbot-quick button:hover { background: #262f42; color: #cfd6e2; }
+ 
+.sbot-input-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  background: #161b26;
+  border-top: 1px solid #232c3d;
+  padding: 8px 8px 8px 12px;
+}
+.sbot-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #e5e9f0;
+  font-size: 13px;
+  outline: none;
+}
+.sbot-input::placeholder { color: #6b7688; }
+.sbot-send {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.sbot-send:hover { background: #ea6a0c; }
+ 
+@media (max-width: 480px) {
+  .sbot-panel { right: 12px; bottom: 84px; width: calc(100vw - 24px); }
+  .sbot-fab { right: 16px; bottom: 16px; }
+}
+.sbot-priority-badge {
+  display: inline-block;
+  background: #f97316;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-bottom: 6px;
+}

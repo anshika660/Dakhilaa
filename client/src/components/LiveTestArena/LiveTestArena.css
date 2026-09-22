@@ -1,0 +1,156 @@
+.lta-loading {
+  color: #8a94a6;
+  text-align: center;
+  padding: 60px 0;
+  font-size: 14px;
+}
+ 
+.lta {
+  background: #0b0e14;
+  border-radius: 14px;
+  padding: 40px 24px;
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.lta-empty {
+  padding: 40px 0;
+}
+.lta-empty-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+.lta-empty h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.lta-empty p {
+  color: #8a94a6;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 400px;
+  margin: 0 auto;
+}
+ 
+.lta-header {
+  margin-bottom: 28px;
+}
+.lta-badge {
+  display: inline-block;
+  background: #f97316;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.lta-header h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.lta-sub {
+  color: #8a94a6;
+  font-size: 13px;
+}
+ 
+.lta-countdown {
+  margin-bottom: 28px;
+}
+.lta-countdown-label {
+  color: #6b7688;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.lta-countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+.lta-time-block {
+  background: #161b26;
+  border: 1px solid #2a3242;
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lta-num {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.lta-unit {
+  color: #6b7688;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+ 
+.lta-live-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #4ade80;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.lta-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  animation: lta-pulse 1.2s ease-in-out infinite;
+}
+@keyframes lta-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.3); }
+}
+ 
+.lta-cta {
+  background: #f97316;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.lta-cta:disabled {
+  background: #2a3242;
+  color: #6b7688;
+  cursor: not-allowed;
+}
+.lta-cta:not(:disabled):hover {
+  background: #ea6a0c;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

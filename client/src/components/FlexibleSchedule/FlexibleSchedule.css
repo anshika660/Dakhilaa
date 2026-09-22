@@ -1,0 +1,145 @@
+ · CSS
+.fs-loading {
+  color: #8a94a6;
+  text-align: center;
+  padding: 60px 0;
+  font-size: 14px;
+}
+ 
+.fs {
+  max-width: 760px;
+  margin: 0 auto;
+}
+ 
+.fs-header { margin-bottom: 24px; }
+.fs-badge {
+  display: inline-block;
+  background: #f97316;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.fs-header h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.fs-sub {
+  color: #8a94a6;
+  font-size: 13px;
+  line-height: 1.5;
+}
+ 
+.fs-form {
+  background: #131926;
+  border: 1px solid #232c3d;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.fs-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fs-field label {
+  color: #9aa5b8;
+  font-size: 12px;
+}
+.fs-field input {
+  background: #0b0e14;
+  border: 1px solid #2a3242;
+  border-radius: 8px;
+  color: #e5e9f0;
+  font-size: 13px;
+  padding: 9px 12px;
+  outline: none;
+}
+.fs-generate {
+  background: #f97316;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.fs-generate:hover { background: #ea6a0c; }
+ 
+.fs-countdown {
+  color: #4ade80;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+ 
+.fs-note {
+  background: #1c1a10;
+  border: 1px solid #453a1a;
+  color: #d9c27a;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+ 
+.fs-week {
+  display: grid;
+  gap: 12px;
+}
+.fs-day {
+  background: #131926;
+  border: 1px solid #232c3d;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+.fs-day-name {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.fs-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fs-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #161b26;
+}
+.fs-block.weak {
+  border-left: 3px solid #f97316;
+}
+.fs-block.general {
+  border-left: 3px solid #2a3242;
+}
+.fs-block-hours {
+  color: #6b7688;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 24px;
+}
+.fs-block-label {
+  color: #c4cdda;
+}
+ 
+@media (max-width: 600px) {
+  .fs-form { flex-direction: column; align-items: stretch; }
+}

@@ -1,0 +1,2 @@
+.benefit-clickable{cursor:pointer;transition:transform .2s,border-color .2s}
+.benefit-clickable:hover{transform:translateY(-3px);border-color:var(--accent,#ff6b35)}

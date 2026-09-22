@@ -1,0 +1,121 @@
+.pc-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.pc-modal {
+  position: relative;
+  background: #0b0e14;
+  border: 1px solid #2a3242;
+  border-radius: 18px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.pc-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #8a94a6;
+  font-size: 20px;
+  cursor: pointer;
+}
+.pc-close:hover { color: #fff; }
+
+.pc-head { text-align: center; margin-bottom: 26px; }
+.pc-title { color: #fff; font-size: 24px; font-weight: 800; }
+.pc-sub { color: #8a94a6; font-size: 13px; margin-top: 6px; }
+
+.pc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.pc-card {
+  background: #131926;
+  border: 1px solid #232c3d;
+  border-radius: 14px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pc-card.featured {
+  border-color: #f97316;
+  box-shadow: 0 0 0 1px #f97316;
+}
+
+.pc-badge {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f97316;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.pc-tag {
+  color: #cfd6e2;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.pc-price {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+.pc-price span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #8a94a6;
+}
+
+.pc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  flex: 1;
+}
+.pc-list li {
+  color: #b6c0d4;
+  font-size: 12.5px;
+  padding: 6px 0;
+}
+
+.pc-btn {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pc-btn-primary { background: #f97316; color: #fff; }
+.pc-btn-primary:hover { background: #ea6a0c; }
+.pc-btn-ghost { background: #1c2333; color: #cfd6e2; }
+.pc-btn-ghost:hover { background: #262f42; }
+
+/* Mobile — cards stack */
+@media (max-width: 720px) {
+  .pc-grid { grid-template-columns: 1fr; }
+  .pc-modal { padding: 24px 18px; }
+}

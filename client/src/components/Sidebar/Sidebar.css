@@ -1,0 +1,106 @@
+
+.sidebar{
+  position:fixed;top:0;left:0;bottom:0;width:280px;
+  background:var(--bg2, #0b1018);
+  border-right:1px solid var(--border, rgba(255,255,255,.08));
+  padding:22px 16px;
+  display:flex;flex-direction:column;
+  overflow-y:auto;z-index:50;
+}
+ 
+.sidebar-logo{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--fh);font-size:22px;font-weight:800;
+  color:var(--white,#fff);margin-bottom:26px;padding:0 6px;
+}
+.sidebar-logo span{color:var(--accent,#ff6b35)}
+ 
+/* NAV */
+.nav-menu{display:flex;flex-direction:column;gap:4px}
+.nav-item{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 14px;border-radius:12px;
+  font-size:14px;font-weight:600;color:var(--light,#aab2c0);
+  cursor:pointer;transition:background .18s,color .18s;
+  user-select:none;
+}
+.nav-item span{font-size:16px;line-height:1}
+.nav-item:hover{background:rgba(255,255,255,.05);color:var(--white,#fff)}
+.nav-item.active{
+  background:rgba(255,107,53,.14);
+  color:var(--accent,#ff6b35);
+  border:1px solid rgba(255,107,53,.3);
+}
+.nav-item.locked{opacity:.55}
+.lock-tag{
+  margin-left:auto;font-size:10px;font-weight:700;
+  background:rgba(139,92,246,.18);color:var(--purple,#8b5cf6);
+  padding:2px 8px;border-radius:20px;letter-spacing:.5px;
+}
+ 
+.sidebar-divider{
+  height:1px;background:var(--border,rgba(255,255,255,.08));
+  margin:14px 6px;
+}
+ 
+/* PROFILE CARD */
+.profile-card{
+  margin-top:auto;
+  background:var(--card,#111826);
+  border:1px solid var(--border,rgba(255,255,255,.08));
+  border-radius:16px;padding:18px 16px;text-align:center;
+}
+.profile-avatar{
+  width:52px;height:52px;border-radius:14px;margin:0 auto 12px;
+  background:linear-gradient(135deg,var(--accent,#ff6b35),var(--purple,#8b5cf6));
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--fh);font-size:20px;font-weight:800;color:#fff;
+}
+.profile-name{font-size:15px;font-weight:700;color:var(--white,#fff);margin-bottom:3px}
+.profile-plan{font-size:11px;color:var(--muted,#6b7688);margin-bottom:16px}
+ 
+.upgrade-btn{
+  width:100%;padding:11px;border:none;border-radius:10px;cursor:pointer;
+  background:var(--accent,#ff6b35);color:#fff;
+  font-size:13px;font-weight:700;font-family:var(--fb);
+  margin-bottom:8px;transition:transform .18s,box-shadow .18s;
+}
+.upgrade-btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,107,53,.3)}
+ 
+.logout-btn{
+  width:100%;padding:10px;border-radius:10px;cursor:pointer;
+  background:transparent;border:1px solid var(--border,rgba(255,255,255,.12));
+  color:var(--light,#aab2c0);font-size:13px;font-weight:600;font-family:var(--fb);
+  transition:border-color .18s,color .18s;
+}
+.logout-btn:hover{border-color:var(--accent,#ff6b35);color:var(--accent,#ff6b35)}
+ 
+/* MOBILE */
+/* Hamburger button — sirf mobile pe dikhta hai */
+.sidebar-toggle{
+  display:none;
+  position:fixed;top:14px;left:14px;z-index:60;
+  width:44px;height:44px;border-radius:12px;
+  background:var(--card,#111826);
+  border:1px solid var(--border,rgba(255,255,255,.12));
+  color:var(--white,#fff);font-size:20px;cursor:pointer;
+  align-items:center;justify-content:center;
+}
+
+/* Dark overlay jab sidebar khula ho */
+.sidebar-overlay{
+  display:none;
+  position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:49;
+}
+
+@media(max-width:768px){
+  .sidebar-toggle{display:flex}
+  .sidebar{
+    transform:translateX(-100%);
+    transition:transform .28s ease;
+    width:270px;
+  }
+   .sidebar.open{transform:translateX(0)}
+  .sidebar.open + .sidebar-overlay{display:block}
+  .sidebar .sidebar-logo{padding-left:52px}
+}

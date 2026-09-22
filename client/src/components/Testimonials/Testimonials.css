@@ -1,0 +1,68 @@
+
+/* ============ TESTIMONIALS (landing) ============ */
+.tst-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+.tst-head {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.tst-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #f97316;
+  background: rgba(249, 115, 22, 0.1);
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.tst-head h2 {
+  font-size: 32px;
+  color: #fff;
+  margin: 0 0 8px;
+}
+.tst-head p {
+  font-size: 15px;
+  color: #8a94a6;
+  margin: 0;
+}
+.tst-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.tst-card {
+  background: #141a2a;
+  border: 1px solid #232a3d;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.tst-stars {
+  color: #fbbf24;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.tst-msg {
+  color: #d1d9e6;
+  font-size: 14px;
+  line-height: 1.6;
+  flex: 1;
+  margin: 0 0 16px;
+}
+.tst-name {
+  color: #f97316;
+  font-size: 14px;
+  font-weight: 600;
+}
+ 
+@media (max-width: 640px) {
+  .tst-grid { grid-template-columns: 1fr; }
+  .tst-head h2 { font-size: 26px; }
+}

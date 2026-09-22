@@ -1,0 +1,14 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron-schedule-test",
+      "schedule": "0 6 * * 0"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!api).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+
+.psup {
+  background: #0b0e14;
+  border-radius: 14px;
+  padding: 30px 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+}
+ 
+.psup-header { text-align: center; margin-bottom: 20px; }
+.psup-badge {
+  display: inline-block;
+  background: #f97316;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.psup-title { color: #fff; font-size: 20px; font-weight: 700; }
+.psup-sub { color: #4ade80; font-size: 12px; margin-top: 4px; }
+ 
+.psup-chat {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px;
+  margin-bottom: 14px;
+  max-height: 340px;
+}
+.psup-msg {
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 85%;
+}
+.psup-msg.bot { background: #161b26; color: #b6c0d4; align-self: flex-start; }
+.psup-msg.user { background: #f97316; color: #fff; align-self: flex-end; }
+.psup-typing { color: #8a94a6; font-style: italic; }
+ 
+.psup-quick {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.psup-quick button {
+  background: #1c2333;
+  color: #9aa5b8;
+  border: none;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.psup-quick button:hover { background: #262f42; color: #cfd6e2; }
+ 
+.psup-input-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #161b26;
+  border: 1px solid #2a3242;
+  border-radius: 12px;
+  padding: 6px 6px 6px 14px;
+}
+.psup-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #e5e9f0;
+  font-size: 13px;
+  outline: none;
+}
+.psup-input::placeholder { color: #6b7688; }
+.psup-send {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f97316;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.psup-send:hover { background: #ea6a0c; }

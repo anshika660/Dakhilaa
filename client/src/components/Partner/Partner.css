@@ -1,0 +1,164 @@
+/* =====================================================================
+   Partner.css — WHITE / CLEAN look (matches the HTML-file design)
+   Signup + Login page (PartnerSection.jsx)
+   Full-page, white background, orange header bar, white cards.
+   ===================================================================== */
+ 
+.partner-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  font-family: Inter, Arial, sans-serif;
+  padding: 0 0 60px;
+}
+ 
+/* Orange top header bar (like the HTML file) */
+.partner-page::before {
+  content: "Dakhilaa Partner Program";
+  display: block;
+  background: #ff7a00;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 18px 30px;
+  margin-bottom: 30px;
+}
+ 
+.partner-back {
+  background: none;
+  border: none;
+  color: #ff7a00;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 auto 20px;
+  display: block;
+  max-width: 1000px;
+  padding: 0 24px;
+  text-align: left;
+  width: 100%;
+}
+.partner-back:hover { text-decoration: underline; }
+ 
+/* Two-column: left info + right form. On the white theme we stack the
+   form as a clean white card. */
+.partner-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+ 
+.partner-eyebrow {
+  color: #ff7a00;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.partner-left h2 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  color: #111827;
+}
+.partner-left p {
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+.partner-perks { list-style: none; padding: 0; margin: 0; }
+.partner-perks li { color: #374151; font-size: 14px; padding: 6px 0; }
+ 
+/* Form card — white */
+.partner-form {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+ 
+.partner-tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+.partner-tabs button {
+  flex: 1;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  padding: 11px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+.partner-tabs button.active {
+  background: #ff7a00;
+  color: #fff;
+  border-color: transparent;
+}
+ 
+.partner-form input,
+.partner-form select {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 13px 14px;
+  color: #111827;
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.partner-form input::placeholder { color: #9ca3af; }
+.partner-form input:focus,
+.partner-form select:focus { outline: none; border-color: #ff7a00; }
+ 
+.partner-btn {
+  width: 100%;
+  background: #ff7a00;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background .2s;
+}
+.partner-btn:hover:not(:disabled) { background: #e86e00; }
+.partner-btn:disabled { opacity: .6; cursor: not-allowed; }
+ 
+.partner-error {
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #fecaca;
+}
+ 
+/* Success screen */
+.partner-success {
+  grid-template-columns: 1fr;
+  display: block;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.partner-success h2 { font-size: 26px; font-weight: 800; color: #111827; margin: 8px 0 12px; }
+.partner-success p { color: #4b5563; font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+ 
+@media (max-width: 850px) {
+  .partner-inner { grid-template-columns: 1fr; gap: 24px; }
+}

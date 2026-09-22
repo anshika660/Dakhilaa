@@ -1,0 +1,7 @@
+.main-content { margin-left: 280px; padding: 24px; }
+.view-section { animation: fadeIn .3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: translateY(0) } }
+
+@media (max-width: 768px) {
+  .main-content { margin-left: 0; padding-top: 70px; }
+}
