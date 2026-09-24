@@ -205,7 +205,8 @@ The client interacts with the following Supabase tables:
 
 The following diagram represents the Level 0 and Level 1 Data Flow Diagram (DFD) and the high-level backend system architecture of Dakhilaa.
 
-![Dakhilaa Backend DFD and System Design](./docs/backend-architecture.png)
+![Dakhilaa Backend DFD and System Design]<img width="1188" height="1324" alt="backend-architecture" src="https://github.com/user-attachments/assets/0e7c6ebe-ea95-4205-afec-0e3e74178609" />
+
 ## ⚙️ 6. Getting Started & Local Setup
 
 ### Prerequisites
