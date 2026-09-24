@@ -199,7 +199,13 @@ The client interacts with the following Supabase tables:
 - `referrals`: Sales records tracking `referral_code`, `amount`, and `commission`.
 
 ---
+## Backend Architecture
 
+### Backend DFD & System Design
+
+The following diagram represents the Level 0 and Level 1 Data Flow Diagram (DFD) and the high-level backend system architecture of Dakhilaa.
+
+![Dakhilaa Backend DFD and System Design](./docs/backend-architecture.png)
 ## ⚙️ 6. Getting Started & Local Setup
 
 ### Prerequisites
